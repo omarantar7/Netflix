@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunknetflix_last_clone=self.webpackChunknetflix_last_clone||[]).push([[126],{9126:function(t,a,n){n.d(a,{B8K:function(){return l}});var e=n(9983);function l(t){return(0,e.w_)({tag:"svg",attr:{fill:"currentColor",viewBox:"0 0 16 16"},child:[{tag:"path",attr:{d:"M8 0a1 1 0 0 1 1 1v6h6a1 1 0 1 1 0 2H9v6a1 1 0 1 1-2 0V9H1a1 1 0 0 1 0-2h6V1a1 1 0 0 1 1-1z"}}]})(t)}}}]);
+//# sourceMappingURL=126.396f2541.chunk.js.map
