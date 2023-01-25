@@ -1,0 +1,150 @@
+.login{
+    position: relative;
+    height: 100vh;
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/84526d58-475e-4e6f-9c81-d2d78ddce803/73445b7b-e8cb-43f6-8853-c6a92bb1967d/LB-en-20221228-popsignuptwoweeks-perspective_alpha_website_small.jpg') center no-repeat;
+    background-size: cover;
+    background-position: center;
+    overflow-x: hidden;
+}
+.logo__image{
+    position: fixed;
+    left: 0;
+    height: 90px;
+    padding-left: 1rem;
+    z-index: 100;
+
+}
+.signin__btn{
+    font: inherit;
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    padding: 10px 20px;
+    color: white;
+    background-color: #e50914;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    z-index: 100;
+}
+.signin__btn:hover{
+    background-color: red;
+    transform: scale(1.08);
+    transition: linear 0.2s;
+}
+.login__gradient{
+    width: 100%;
+    z-index: 1;
+    height: 120vh;
+    background: rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(
+        to top,
+        rgba(0,0,0,0.8) 0%,
+        transparent 60%,
+        rgba(0,0,0,0.8) 100%
+    );
+}
+.login__body{
+    color: #fff;
+    z-index: 1;
+    padding: 20px;
+    position: absolute;
+    top: 25%;
+    left: 24%;
+    text-align: center;
+    max-width: 160vw;
+    width: 50%;
+}
+@media(max-width:920px){
+    .login__body{
+        width: 90%;
+        left: 0;
+        top: 15%;
+    }
+    .login__gradient{
+        height: 160vh;
+    }
+}
+.login__body h1{
+    font-size: 3rem;
+    padding-bottom: 20px;
+}
+.login__body h2{
+    font-size: 2rem;
+    font-weight: 400;
+    padding-bottom: 30px;
+}
+.login__body h3{
+    font-size: 1.3rem;
+    font-weight: 400;
+    margin: 1rem;
+}
+.input__form form input{
+    padding: 20px;
+    outline: none;
+    height: 30px;
+    width: 70%;
+    border: none;
+    max-width: 600px;
+    font-size: 1rem;
+}
+.invalid form input{
+    padding: 20px;
+    outline: none;
+    height: 30px;
+    width: 70%;
+    border: none;
+    max-width: 600px;
+    font-size: 1rem;
+}
+.input__form form button{
+    padding: 25px 35px;
+    font: inherit;
+    border: none;
+    background-color: #e50914;
+    color: #eee;
+    cursor: pointer;
+    font-weight: 600;
+}
+.invalid form button{
+    padding: 25px 35px;
+    font: inherit;
+    border: none;
+    background-color: #e50914;
+    color: #eee;
+    cursor: pointer;
+    font-weight: 600;
+}
+.input__form form button:hover{
+    background-color: red;
+    transition: linear 0.2s;
+}
+.invalid input {
+    border: 1px solid #b40e0e;
+    
+    background-color: #fddddd;
+
+}
+.invalid input:focus {
+    border-color: #ff8800;
+    background-color: #fbe8d2;
+  }
+  .error-text{
+    margin-left: 1rem;
+    color: #b40e0e;
+    text-align: start;
+  }
+@media(max-width:950px){
+    .input__form form{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .input__form form input{
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+    .input__form form button{
+        padding: 15px 35px;
+    }
+}

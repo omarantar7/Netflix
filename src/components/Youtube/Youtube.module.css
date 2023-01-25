@@ -1,0 +1,58 @@
+.bg{
+    background-color: rgba(0,0,0,0.7);
+    position: relative;
+    z-index: 1;
+}
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+}
+
+@media(max-width:940px){
+  .bg{
+    height: 100vh;
+  }
+  .video-responsive{
+    top: 30%;
+  }
+  .video-responsive > h1{
+    position: absolute;
+    top: 2%;
+    left: 25%;
+    font-size: 1rem;
+  }
+  .video-responsive iframe{
+    height: 70%;
+    width: 70%;
+  }
+  .video-responsive > h2{
+    position: absolute;
+    top: 0;
+    left: 80%;
+    font-size: 1rem;
+  }
+} 
+  .video-responsive > h1{
+    position: absolute;
+    top: 0;
+    left: 15%;
+  }
+  .video-responsive > h2{
+    position: absolute;
+    top: 0;
+    left: 80%;
+    cursor: pointer;
+  }
+  
+  .video-responsive iframe {
+    top: 9%;
+    left: 15%;
+    height: 70%;
+    width: 70%;
+    position: absolute;
+  }
+  .load{
+    margin-top: 20%;
+  }

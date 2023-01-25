@@ -1,0 +1,172 @@
+.page{
+    background: url('https://assets.nflxext.com/ffe/siteui/vlv3/7cee2527-d2cc-4cc9-99f6-d1375e72d46e/48fea51c-e2cc-4957-9889-0e272fe4aa28/LB-en-20230103-popsignuptwoweeks-perspective_alpha_website_small.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    position: relative;
+    overflow-x: hidden;
+}
+.page > img {
+    height: 100px;
+    margin-left: 1rem;
+    position: fixed;
+}
+.gradient{
+    width: 100%;
+    z-index: 1;
+    height: 120vh;
+    background: rgba(0, 0, 0, 0.6);
+    background-image: linear-gradient(
+        to top,
+        rgba(0,0,0,0.3) 0%,
+        transparent 60%,
+        rgba(0,0,0,0.3) 100%
+    );
+}
+.signin__page{
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    right: 10%;
+    z-index: 1;
+    text-align: center;
+    width: 18%;
+    background-color: rgba(0,0,0,0.85);
+    margin-left: auto;
+    margin-right: auto;
+    padding: 70px;
+    border-radius: 10px;
+}
+.signin__page form{
+    display: grid;
+    flex-direction: column;
+}
+.signin__page form > h2{
+    text-align: left;
+    margin-bottom: 25px;
+}
+.second{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(58, 55, 55);
+    color: #fff;
+}
+.first{
+    width: 97%;
+}
+.second > span{
+    color: gray;
+    margin: .8rem .5rem;
+    cursor: pointer;
+}
+.second:focus{
+    background-color: #fff;
+}
+.first > input ,.second > input{
+    outline: 0;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 15px;
+    background-color: rgb(58, 55, 55);
+    color: #fff;
+    width: 90%;
+}
+.first > input{
+    margin-bottom: 1rem;
+}
+@media (max-width:450px){
+    .signin__page{
+        left: 1%;
+        right: 5%;
+        width: 68vw;
+        padding: 70px 30px;
+    }
+    .first{
+        width: 98%;
+    }
+}
+.invalid{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(58, 55, 55);
+}
+.invalid > span{
+    color: gray;
+    margin: .8rem .5rem;
+    cursor: pointer;
+}
+.invalid > input{
+    outline: 0;
+    height: 40px;
+    border: none;
+    border-radius: 4px;
+    padding: 5px 15px;
+    color: #fff;
+    background-color: rgb(58, 55, 55);
+    width: 90%;
+}
+.worng-message{
+    background-color: #ff8000;
+    font-weight: 600;
+    width: 76%;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+    padding-top: 1rem;
+}
+
+
+.signin__page > form > button{
+    background-color: #e50914;
+    color: #eee;
+    padding: 16px 20px;
+    font-size: 1rem;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+}
+.signin__page > form > button:disabled{
+    background-color: #eee;
+    color: #000;
+    cursor: not-allowed;
+}
+.signin__page > form > button:hover{
+    background-color: red;
+    color: #111;
+    transition: linear 0.2s;
+}
+@media(max-width:500px){
+    .signin__page > form > button:hover{
+        background-color: #e50914;
+        color: #eee;
+        transition: linear 0.2s;
+    }
+}
+.signin__page > form > h4{
+text-align: left;
+margin-top: 30px;
+}
+.signin__page >form > h4 > span:nth-child(1){
+    color: gray;
+}
+.signin__page > form > h4 > a > span:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+.signin__page > form > h4 > a {
+    text-decoration: none;
+    color: #fff;
+}
+.invalid {
+    border-bottom: 3px solid #ff8000;
+}
+
+.error-text{
+    color:rgb(255, 128, 0);
+    text-align: left;
+}

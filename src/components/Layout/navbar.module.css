@@ -1,0 +1,157 @@
+
+.nav{
+    position: fixed;
+    top: 0;
+    padding: 20px;
+    width: 100%;
+    height: 3rem;
+    z-index: 1;
+    transition-timing-function: ease-in;
+    transition: all 0.5s; 
+}
+.nav__black{
+    background-color: #111;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+}
+.navlogo{
+    position: fixed;
+    left: 0;
+    width: 7rem;
+    padding-left: 20px;
+    cursor: pointer;
+}
+.list{
+    display: flex;
+    margin-left: 8rem;
+    margin-top: 1rem;
+    padding: 0.25rem;
+    transition: translate 300ms ease-out;
+}
+.list .home{
+    color: #fff;
+    text-decoration: none;
+}
+.list a{
+    text-decoration: none;
+    margin-left: 0.5rem;
+}
+.list a:hover , a:active,.list a.active{
+    transform: scale(1.02);
+    font-weight: bold;
+    border-bottom: 4px solid #e50914;
+    
+}
+.list .tvshows{
+    color: #fff;
+    text-decoration: none;
+}
+.list .movies{
+    color: #fff;
+    text-decoration: none;
+}
+.list .mylist{
+    color: #fff;
+    text-decoration: none;
+}
+.navavatar{
+    position: fixed;
+    right: 20px;
+    top: 20px;
+    width: 50px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+.btn{
+    position: fixed;
+    border: gray 1px solid;
+    border-radius: 20px;
+    background-color: #111;
+    color: white;
+    right: 40px;
+    top: 70px;
+    cursor: pointer;
+    padding: 1rem 2rem;
+}
+.icon{
+    display: flex;
+    margin-right: 8rem;
+    margin-top: 0.5rem;
+    height: 2rem;
+    width: 2rem;
+    display: none;
+}
+.close{
+    display: none;
+}
+.search{
+    width: 2rem;
+    height: 2rem;
+    margin-left: 1rem;
+    margin-top: 0;
+    cursor: pointer;
+}
+.search:active{
+    cursor:wait;
+}
+
+@media(max-width:600px){
+    .list {
+        position: absolute;
+        display: block;
+        right: 0;
+        left: 0;
+        top: 0;
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+        height: 100vh;
+        background: #111;
+        text-align: center;
+        padding: 0 0 2rem 0;
+        border-top: .1rem solid rgba(0, 0, 0, .1);
+        opacity: 0;
+        translate: 100%;
+        transition: translate 300ms ease-out;
+        z-index: 2;
+    }
+    .icon{
+        margin-left: 71%;
+        display: block;
+        z-index: 1;
+    }
+    .list a {
+        display: block;
+        margin: 0.5rem 0;
+        padding: 1rem 0;
+        font-size: 1.5rem;
+        margin-bottom: 1rem;
+    }
+    .close{
+        margin-left: 80%;
+        padding: 0;
+        display: block;
+        font-size: 3rem;
+        z-index: 1;
+    }
+    .list.list-toggle {
+        translate: 0;
+        opacity: 1;
+    }
+}
+@media(max-width:500px){
+    .icon{
+        margin-left: 65%;
+    }}
+@media(max-width:400px){
+    .icon{
+        margin-left: 57%;
+    }
+}
+@media(max-width:380px){
+    .icon{
+        margin-left: 60%;
+    }
+}

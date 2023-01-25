@@ -1,0 +1,36 @@
+.field{
+    display: flex;
+    margin: 1rem;
+    
+}
+.field > input{
+    outline: none;
+    border-radius: .25rem;
+    padding: .15rem .5rem;
+    width: 90%;
+    font-size: 1.25rem;
+}
+.searchIcon{
+    margin-left: 1rem;
+    width: 2rem;
+    height: 2rem;
+    color: #000;
+    cursor: pointer;
+    color: #fff;
+}
+
+.result{
+    margin: 0;
+    padding: 0;
+    max-height: 23rem;
+    overflow-y:scroll;
+}
+
+.nofound{
+    margin-left: 25%;
+}
+@media(max-width:600px){
+    .nofound{
+        margin-left: 1rem;
+    }
+}

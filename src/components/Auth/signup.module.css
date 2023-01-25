@@ -1,0 +1,154 @@
+.signup{
+    background-color: #fff;
+    color: #000;
+    height: 135vh;
+}
+
+.layout{
+    border-bottom: 1px solid gray;
+    display: flex;
+    justify-content: space-between;
+    background-color: transparent;
+}
+.layout > img{
+    height: 90px;
+    margin-left: 1rem;
+}
+.layout > h3{
+    margin-top: 2rem;
+    margin-right: 1rem;
+    cursor: pointer;
+}
+.layout > h3:hover{
+    text-decoration: underline;
+}
+.content{
+    margin: 2rem auto;
+    max-width: 30vw;
+    width: 100%;
+}
+@media(max-width:460px){
+    .signup{
+        width: 100%;
+    }
+    .content{
+        max-width: 65vw;
+        width: 100%;
+    }
+    .first{
+        width: 85%;
+    }
+}
+.content span{
+    font-size: 14px;
+}
+.content > h4{
+    color: gray;
+    margin-top: 20px;
+}
+.content > form{
+    display: grid;
+    width: 100%;
+    margin-top: 10px;
+}
+.second{
+    display: flex;
+    border: 1px solid gray;
+    margin-top: 10px;
+    width: 94.6%;
+}
+
+.first > input,.second > input{
+    padding: 1rem 2rem;
+    font-size: 18px;
+    outline: none;
+    width: 80%;
+}
+.second>input{
+    border: none;
+}
+.second > span{
+    margin: 1rem;
+    margin-left: 0;
+    cursor: pointer;
+}
+.invalid > span{
+    margin: 1rem;
+    margin-left: 0;
+    cursor: pointer;
+}
+.worng-message{
+    background-color: #ff8000;
+    font-weight: 600;
+    width: 80%;
+    text-align: center;
+    margin-bottom: 1rem;
+    border-radius: 1rem;
+    padding: 2rem 2rem;
+}
+.first:focus,.second:focus{
+    border:2px solid rgb(0, 255, 0);
+}
+.check{
+    margin-top: 20px;
+    display: flex;
+}
+.check > span{
+    font-size: 16px;
+    margin-top: 5px;
+}
+.check > input{
+    width: 2rem;
+    height: 2rem;
+    cursor: pointer;
+}
+.content > form > button{
+    background-color: #e50914;
+    color: #eee;
+    font-size: 28px;
+    padding: 16px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+}
+.content > form > button:hover{
+    background-color: red;
+    color: #111;
+    transition: linear 0.2s;
+}
+.content > form > button:disabled{
+    background-color: #eee;
+    color: #000;
+    cursor: not-allowed;
+}
+.invalid {
+    border-bottom: 2px solid #ff8800;
+    background-color: #fddddd;
+    display: flex;
+    border: 1px solid gray;
+    margin-top: 10px;
+    width: 94.6%;
+}
+.invalid > input{
+    padding: 1rem 2rem;
+    width: 100%;
+    outline: none;
+    background-color: #fddddd;
+    font-size: 18px;
+    border: none;
+}
+.invalid:focus {
+    border-color: #faa544;
+    margin-top: 10px;
+    padding: 1rem 2rem;
+    font-size: 18px;
+    outline: none;
+    width: 80%;
+  }
+  .error-text{
+    margin-left: 0.5rem;
+    color: #faa544;
+    text-align: start;
+  }

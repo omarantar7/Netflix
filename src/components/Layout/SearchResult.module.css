@@ -1,0 +1,12 @@
+.all{
+    background-color: #6d0808;
+    color: #fff;
+    display: flex;
+    border-bottom: 3px solid black;
+    padding: 1rem;
+}
+.all > img{
+    height: 60px;
+    margin-right: 1rem;
+    border-radius: .5rem;
+}

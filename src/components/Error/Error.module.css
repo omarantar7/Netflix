@@ -1,0 +1,67 @@
+.Error{
+    background: url('https://assets.nflxext.com/ffe/siteui/pages/errors/bg-lost-in-space.png');
+    background-size: cover;
+    background-position: bottom;
+    height: 100vh;
+}
+.head{
+    background-color: #000;
+}
+.head > img{
+    height: 70px;
+}
+.content{
+    margin-top: 8%;
+    margin-left:auto;
+    margin-right: auto;
+    max-width: 45rem;
+    text-align: center;
+}
+.content > h1{
+    font-size: 4rem;
+    margin-bottom: 1.5rem;
+}
+.content > p{
+    margin-bottom: 1.5rem;
+    font-size: 1.5rem;
+}
+.content > a > button{
+    padding: .5rem 2rem;
+    background-color: #fff;
+    color: #000;
+    border-radius: 6px;
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+.content > a > button:hover{
+    background-color: #ffffffe6;
+}
+.err404{
+    padding: 2rem;
+}
+.err404 > span{
+    font-size: 30px;
+}
+.err404 > span:nth-child(1){
+    color: #d2cece;
+    border-left: 2px solid #b50a0a;
+    padding-left: 0.5rem;
+}
+.err404 > span:nth-child(2){
+    font-weight: bold;
+}
+.foot {
+    position: absolute;
+    bottom: 5%;
+    right: 4%;
+}
+.foot > span:nth-child(1){
+    color: #a59f9f;
+    font-size: 17px;
+}
+.foot > span:nth-child(2){
+    color: #fff;
+    font-size: 17px;
+    font-weight: bold;
+}

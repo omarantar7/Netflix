@@ -1,0 +1,37 @@
+.all{
+    display: grid;
+    height: 100%;
+    margin: 2rem 0;
+    margin-left: 2rem;
+}
+@keyframes Loading{
+    from{
+        background-color: hsl(200, 20%, 70%);
+    }
+    to{
+        background-color: hsl(200, 20%, 95%);
+    }
+}
+.first{
+    width: 14rem;
+    height: 10rem;
+    margin-bottom: .5rem;
+    border-radius: 2rem;
+    animation: Loading 1s linear infinite alternate;
+    background-color: #fff;
+}
+.second{
+    width: 8rem;
+    height: 1rem;
+    margin-bottom: .5rem;
+    border-radius: 2rem;
+    animation: Loading 1s linear infinite alternate;
+
+}
+.third{
+    width: 14rem;
+    height: 1rem;
+    margin-bottom: .5rem;
+    border-radius: 2rem;
+    animation: Loading 1s linear infinite alternate;
+}

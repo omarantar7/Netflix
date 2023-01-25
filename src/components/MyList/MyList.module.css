@@ -1,0 +1,16 @@
+.all{
+    margin-top: 8rem;
+}
+.all > h1{
+    margin-bottom: 2rem;
+    margin-left: 1rem;
+}
+.parag{
+    position: absolute;
+    left: 45%;
+}
+@media (max-width:920px){
+    .parag{
+        left: 30%;
+    }
+}

@@ -1,0 +1,16 @@
+.rotate{
+    background-color: transparent;
+    border: 1px solid #eee;
+    border-radius: 100%;
+    border-left: transparent;
+    border-bottom: transparent;
+    margin: auto;
+    height: 40px;
+    width: 40px;
+    animation: spinner 1.2s linear infinite;
+}
+@keyframes spinner{
+    100%{
+        transform: rotate(360deg);
+    }
+}

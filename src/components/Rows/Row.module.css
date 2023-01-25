@@ -1,0 +1,83 @@
+
+.row{
+    color: white;
+    margin-left: 1rem;
+}
+.row__posters{
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+    padding: 20px;
+    overflow-x: scroll;
+    scroll-behavior:smooth;
+}
+.fix{
+    margin-right: 20px;
+    color: #fff;
+    background: linear-gradient(360deg,rgb(156, 7, 7) ,#000 40%);
+    border: none;
+    border-radius: 16px;
+    padding: 1rem;
+    transition: transform 250ms;
+    border-radius: 16px;
+}
+.imgg{
+    height: 150px;
+    border-radius: 16px;
+}
+.fix > h4{
+    font-weight: bold;
+    font-size: 20px;
+    font-style: italic;
+    color: #eee;
+} 
+a{
+    text-decoration: none;
+}
+.row__posters::-webkit-scrollbar{
+    display: none;
+}
+
+.fix:hover{
+    transform: scale(1.08);
+    opacity: 1;
+}
+.forward{
+    position:relative;
+    bottom:12rem;
+    background-color: #fff;
+    float: right;
+    border-radius: .25rem;
+    padding: .5rem;
+    cursor:grab;
+}
+.forward:active{
+    cursor: grabbing;
+}
+.backward{
+    position:relative;
+    bottom:12rem;
+    background-color: #fff;
+    float: left;
+    border-radius: .25rem;
+    padding: .5rem;
+    cursor: grab;
+}
+.backward:active{
+    cursor: grabbing;
+}
+.backwardIcon{
+    width: 2rem;
+    height: 2rem;
+    color: #000;
+}
+.forwardIcon{
+    width: 2rem;
+    height: 2rem;
+    color: #000;
+}
+@media (max-width:400px){
+    .forward,.backward{
+        display: none;
+    }
+}
