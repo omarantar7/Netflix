@@ -11,10 +11,6 @@ import SearchBar from "./Search";
 import { AiOutlineSearch } from "react-icons/ai";
 
 const Navbar = () => {
-  //const [show, setShow] = useState(false);
-  //const [shown, setShown] = useState(false);
-  //const [isMenu, setIsMenu] = useState(false);
-  //const [onSearch, setOnSearch] = useState(false);
   const [state,setState]=useState({
     show:false,
     shown:false,
@@ -22,12 +18,10 @@ const Navbar = () => {
     onSearch:false
   })
   const menuDrop = () => {
-    //setIsMenu((currentMenu) => !currentMenu);
     setState((prev) => {return {...prev,isMenu:!prev.isMenu}})
   };
 
   const searchHandler = () => {
-   // setOnSearch((prev) => !prev);
    setState((prev) => {return {...prev,onSearch:!prev.onSearch}})
 
   };
@@ -39,7 +33,6 @@ const Navbar = () => {
   };
 
   const showSginoutHandler = () => {
-//    setShown((prev) => !prev);
     setState((prev) => {return {...prev , shown:!prev.shown}})
 };
 
